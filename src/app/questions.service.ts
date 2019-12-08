@@ -5,12 +5,14 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-
 export class QuestionsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+  }
 
   public getJSON(fileId: string) {
-    return this.http.get('./assets/${fileId}.json') as Observable<any>;
+    return this.http.get(`./assets/${fileId}.json`) as Observable<any>;
   }
 }
+
