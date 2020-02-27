@@ -40,5 +40,68 @@
                 "correct": false
             }
         ]
+    },
+    {
+        "label": "What is 4 + 8?",
+        "choices": [
+            {
+                "value": "11",
+                "correct": true
+            },
+            {
+                "value": "10",
+                "correct": false
+            },
+            {
+                "value": "1",
+                "correct": false
+            },
+            {
+                "value": "50",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "label": "What is 1 + 9?",
+        "choices": [
+            {
+                "value": "5",
+                "correct": false
+            },
+            {
+                "value": "15",
+                "correct": false
+            },
+            {
+                "value": "x",
+                "correct": false
+            },
+            {
+                "value": "10",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "label": "What is 100 - 9?",
+        "choices": [
+            {
+                "value": "5",
+                "correct": false
+            },
+            {
+                "value": "15",
+                "correct": false
+            },
+            {
+                "value": "91",
+                "correct": true
+            },
+            {
+                "value": "15",
+                "correct": false
+            }
+        ]
     }
 ]
