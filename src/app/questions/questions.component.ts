@@ -12,21 +12,18 @@ import { Quiz, Answers, Choice, Question } from '../quiz.model';
   styleUrls: ['./questions.component.scss']
 })
 export class QuestionsComponent implements OnInit {
-
-  quiz: Quiz;
   answers: Answers;
   questions: Question[];
+  quiz: Quiz;
   currentQuestionIndex: number;
 
   showResults = false;
 
-  //inject both the active route and the questions service
   constructor(private route: ActivatedRoute, private questionsService: QuestionsService) { }
 
   ngOnInit() {
-
-    //read from the dynamic route and load the proper quiz data
-    this.questionsService.getQuestion(this.route.snapshot.params.quizId)
+    //read from dynamic route and load the proper quiz data
+    this.questionsService.getQuestions(this.route.snapshot.params.quizId)
       .subscribe(questions => {
         //initialize everything
         this.questions = questions;
@@ -54,5 +51,4 @@ export class QuestionsComponent implements OnInit {
     this.answers = undefined;
     this.currentQuestionIndex = undefined;
   }
-
 }

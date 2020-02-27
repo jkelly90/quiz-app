@@ -1,4 +1,3 @@
-
 import { Component, Input } from '@angular/core';
 import { Answers } from '../quiz.model';
 
